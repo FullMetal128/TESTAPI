@@ -1,8 +1,7 @@
 import requests
 import pytest
 from constants import const
-import basic_func.read_file
-
+from basic_func import read_file
 
 @pytest.mark.parametrize("name, job", [
     ("olig", "starlord"),
@@ -22,7 +21,7 @@ def create_user(name: str, job: str) -> int:
 
 @pytest.fixture()
 def delete_user():
-    id = basic_func.read_file.read_txt()
+    id = read_file.read_txt()
     response = requests.get(url= f'https://reqres.in/api/users{id}')
     assert response.status_code == 200
     yield
