@@ -1,6 +1,6 @@
 import requests
 import pytest
-import constants.constants
+from constants import const
 import basic_func.read_file
 
 
@@ -12,7 +12,7 @@ import basic_func.read_file
 
 @pytest.fixture()
 def create_user(name: str, job: str) -> int:
-    data = constants.constants.data_create_user(name, job)
+    data = const.data_create_user(name, job)
     response = requests.post(url = 'https://reqres.in/api/users', json= data)
     assert response.status_code == 201
     file = open(r'C:\Users\dima-\PycharmProjects\TESTAPI\data\id.txt')
