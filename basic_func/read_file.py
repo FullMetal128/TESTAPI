@@ -4,3 +4,4 @@ def read_txt():
             return  file.readlines()[0]
     except:
         return None
+

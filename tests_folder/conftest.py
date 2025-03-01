@@ -6,11 +6,7 @@ sys.path.append(os.path.abspath(os.path.dirname(__file__) + "/.."))
 import constants
 from basic_func import read_file
 
-@pytest.mark.parametrize("name, job", [
-    ("olig", "starlord"),
-    ("dima", "iron man"),
-    ("jorjio", "raccoon")
-])
+
 
 @pytest.fixture()
 def create_user(name: str, job: str) -> int:

@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf429328-b44e-475b-a30d-6096f45f7390" name="Changes" comment="parametrize">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic_func/read_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic_func/read_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_folder/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_folder/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests_folder/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests_folder/test.py" afterDir="false" />
     </list>
@@ -46,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test.py.executor": "Run",
     "Python.main.executor": "Run",
     "Python.read_file.executor": "Run",
     "Python.test.executor": "Run",
@@ -60,7 +63,7 @@
       <recent name="C:\Users\dima-\PycharmProjects\TESTAPI\tests_folder" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Python tests in test.py">
     <configuration name="read_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TESTAPI" />
       <option name="ENV_FILES" value="" />
@@ -83,8 +86,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="TESTAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests_folder" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests_folder/test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test.py" />
         <item itemvalue="Python.read_file" />
       </list>
     </recent_temporary>
@@ -153,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740847543978</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="parametrize">
+      <option name="closed" value="true" />
+      <created>1740847961518</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740847961518</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
