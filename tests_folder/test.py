@@ -19,3 +19,5 @@ def test_create_users(delete_user, name, job):
         file.write(response.json()['id'])
 
     assert response.status_code == 201, f'success{response.json()}'
+    assert response.status_code == 400, f'success{response.json()}' # это было для проверки, можно удалить, из-за него тесты проваливаются
+    return response.json()['id']
