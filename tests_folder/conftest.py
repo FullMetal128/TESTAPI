@@ -1,6 +1,9 @@
 import requests
 import pytest
-from constants import const
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.dirname(__file__) + "/.."))
+import constants
 from basic_func import read_file
 
 @pytest.mark.parametrize("name, job", [
@@ -11,7 +14,7 @@ from basic_func import read_file
 
 @pytest.fixture()
 def create_user(name: str, job: str) -> int:
-    data = const.data_create_user(name, job)
+    data = constants.const.data_create_user(name, job)
     response = requests.post(url = 'https://reqres.in/api/users', json= data)
     assert response.status_code == 201
     file = open(r'C:\Users\dima-\PycharmProjects\TESTAPI\data\id.txt')
@@ -27,3 +30,4 @@ def delete_user():
     yield
     response_delete = requests.delete(url = f'https://reqres.in/api/users{id}')
     assert response_delete.status_code == 204
+
